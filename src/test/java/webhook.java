@@ -25,6 +25,7 @@ public class webhook {
 
     @Before
     public void setUp() throws MalformedURLException {
+        System.out.println(uid);
         dc.setCapability("testName", "Quick Start Android Native Demo");
         dc.setCapability("accessKey", accessKey);
         dc.setCapability("deviceQuery", "@serialnumber='"+uid+"'");
