@@ -32,7 +32,6 @@ public class webhook {
         dc.setCapability("testName", "Quick Start Android Native Demo");
         dc.setCapability("accessKey", accessKey);
         dc.setCapability("deviceQuery", "@serialnumber='"+uid+"'");
-        dc.setCapability(MobileCapabilityType.APP, "C:\\Users\\yara.haddad\\Downloads\\eribank.apk");
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
        // dc.setBrowserName(MobileBrowserType.CHROMIUM);
