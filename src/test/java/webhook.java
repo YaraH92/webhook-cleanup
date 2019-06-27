@@ -20,12 +20,12 @@ public class webhook {
     private String accessKey = "eyJ4cC51IjoyLCJ4cC5wIjoxLCJ4cC5tIjoiTVRVMk1UWTBNalkyTlRjMk1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4NzcwMDI2NjUsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.B3ptPrCxbg06_BubE9SQUNzWvDa0iNepN7bqOD0w4C4";
     protected AndroidDriver<AndroidElement> driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
-    private String uid=System.getenv("deviceID");
+//    private String uid=System.getenv("deviceID");
+    private String uid="1115fb3c0e5f3c03";
     private String status="failed";
 
     @Before
     public void setUp() throws MalformedURLException {
-        System.out.println(uid);
         dc.setCapability("testName", "Quick Start Android Native Demo");
         dc.setCapability("accessKey", accessKey);
         dc.setCapability("deviceQuery", "@serialnumber='"+uid+"'");
