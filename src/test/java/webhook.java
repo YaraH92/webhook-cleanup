@@ -10,14 +10,14 @@ import org.junit.*;
 
 public class webhook {
 
-//    private String accessKey = "eyJ4cC51IjoyLCJ4cC5wIjoxLCJ4cC5tIjoiTVRVMk1UWTBNalkyTlRjMk1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4NzcwMDI2NjUsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.B3ptPrCxbg06_BubE9SQUNzWvDa0iNepN7bqOD0w4C4";
-    private String accessKey = "eyJ4cC51IjoxMzYsInhwLnAiOjIsInhwLm0iOiJNVFUwTlRZMU1EYzRNVEF4T1EiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE4NjEwMTA3ODEsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.5D_cBCiQ77GeL8_7p0m2IdFPaJr4ieGqtRtprKDv1PI";
+    private String accessKey = "eyJ4cC51IjoyLCJ4cC5wIjoxLCJ4cC5tIjoiTVRVMk1UWTBNalkyTlRjMk1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4NzcwMDI2NjUsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.B3ptPrCxbg06_BubE9SQUNzWvDa0iNepN7bqOD0w4C4";
+  //  private String accessKey = "eyJ4cC51IjoxMzYsInhwLnAiOjIsInhwLm0iOiJNVFUwTlRZMU1EYzRNVEF4T1EiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE4NjEwMTA3ODEsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.5D_cBCiQ77GeL8_7p0m2IdFPaJr4ieGqtRtprKDv1PI";
 
     protected Client client = null;
     protected GridClient grid = null;
     private String host = "https://mastercloud.experitest.com";
-//    private String uid=System.getenv("deviceID");
-    private String uid="CVH7N15B04005855";
+    private String uid=System.getenv("deviceID");
+  //  private String uid="CVH7N15B04005855";
     private String status="failed";
 
     @Before
