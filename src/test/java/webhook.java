@@ -1,6 +1,7 @@
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileBrowserType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.apache.http.HttpHeaders;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -10,7 +11,10 @@ import org.apache.http.impl.client.HttpClients;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -28,27 +32,18 @@ public class webhook {
         dc.setCapability("testName", "Quick Start Android Native Demo");
         dc.setCapability("accessKey", accessKey);
         dc.setCapability("deviceQuery", "@serialnumber='"+uid+"'");
-//        dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
-//        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
-//        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+        dc.setBrowserName(MobileBrowserType.CHROMIUM);
         driver = new AndroidDriver<>(new URL("https://mastercloud.experitest.com/wd/hub"), dc);
     }
 
     @Test
     public void quickStartAndroidNativeDemo() {
         driver.rotate(ScreenOrientation.PORTRAIT);
-        driver.findElement(By.xpath("//*[@id='usernameTextField']")).sendKeys("company");
-        driver.hideKeyboard();
-        driver.findElement(By.xpath("//*[@id='passwordTextField']")).sendKeys("company");
-        driver.findElement(By.xpath("//*[@id='loginButton']")).click();
-        driver.findElement(By.xpath("//*[@id='makePaymentButton']")).click();
-        driver.findElement(By.xpath("//*[@id='phoneTextField']")).sendKeys("0541234567");
-        driver.findElement(By.xpath("//*[@id='nameTextField']")).sendKeys("Jon Snow");
-        driver.findElement(By.xpath("//*[@id='amountTextField']")).sendKeys("50");
-        driver.findElement(By.xpath("//*[@id='countryButton']")).click();
-        driver.findElement(By.xpath("//*[@text='Switzerland']")).click();
-        driver.findElement(By.xpath("//*[@id='sendPaymentButton']")).click();
-        driver.findElement(By.xpath("//*[@text='Yes']")).click();
+        driver.get("https://www.google.com");
+        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.name("q")));
+        WebElement searchBar = driver.findElement(By.name("q"));
+        searchBar.sendKeys("Experitest");
+        driver.findElement(By.xpath("//*[@css='BUTTON.Tg7LZd']")).click();
         status="passed";
     }
 
