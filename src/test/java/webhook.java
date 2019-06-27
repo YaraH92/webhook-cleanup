@@ -40,7 +40,7 @@ public class webhook {
         sendResponseToCloud();
         // Generates a report of the test case.
         // For more information - https://docs.experitest.com/display/public/SA/Report+Of+Executed+Test
-        client.generateReport(false);
+    //    client.generateReport(false);
         // Releases the client so that other clients can approach the agent in the near future.
         client.releaseClient();
     }
