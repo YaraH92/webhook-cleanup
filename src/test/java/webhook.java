@@ -27,7 +27,7 @@ public class webhook {
     public void setUp() throws MalformedURLException {
         dc.setCapability("testName", "Quick Start Android Native Demo");
         dc.setCapability("accessKey", accessKey);
-        dc.setCapability("deviceQuery", "@os='android' and @category='PHONE'");
+        dc.setCapability("deviceQuery", "@serialnumber='"+uid+"'");
         dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
