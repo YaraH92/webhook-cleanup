@@ -20,8 +20,7 @@ public class webhook {
     private String accessKey = "eyJ4cC51IjoyLCJ4cC5wIjoxLCJ4cC5tIjoiTVRVMk1UWTBNalkyTlRjMk1BIiwiYWxnIjoiSFMyNTYifQ.eyJleHAiOjE4NzcwMDI2NjUsImlzcyI6ImNvbS5leHBlcml0ZXN0In0.B3ptPrCxbg06_BubE9SQUNzWvDa0iNepN7bqOD0w4C4";
     protected AndroidDriver<AndroidElement> driver = null;
     DesiredCapabilities dc = new DesiredCapabilities();
-//    private String uid=System.getenv("deviceID");
-    private String uid="1115fb3c0e5f3c03";
+    private String uid=System.getenv("deviceID");
     private String status="failed";
 
     @Before
@@ -29,9 +28,9 @@ public class webhook {
         dc.setCapability("testName", "Quick Start Android Native Demo");
         dc.setCapability("accessKey", accessKey);
         dc.setCapability("deviceQuery", "@serialnumber='"+uid+"'");
-        dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
-        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
-        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+//        dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
+//        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
+//        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
         driver = new AndroidDriver<>(new URL("https://mastercloud.experitest.com/wd/hub"), dc);
     }
 
