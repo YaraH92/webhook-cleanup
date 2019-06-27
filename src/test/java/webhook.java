@@ -25,7 +25,7 @@ public class webhook {
 
         grid = new GridClient(accessKey, host);
         client = grid.lockDeviceForExecution("Quick Start seetest iOS NATIVE Demo", "@serialnumber='"+uid+"'", 10, 50000);
-        client.setReporter("xml", "", "Quick Start seetest iOS Native Demo");
+       // client.setReporter("xml", "", "Quick Start seetest iOS Native Demo");
     }
 
     @Test
@@ -40,7 +40,7 @@ public class webhook {
         sendResponseToCloud();
         // Generates a report of the test case.
         // For more information - https://docs.experitest.com/display/public/SA/Report+Of+Executed+Test
-    //    client.generateReport(false);
+     //   client.generateReport(false);
         // Releases the client so that other clients can approach the agent in the near future.
         client.releaseClient();
     }
