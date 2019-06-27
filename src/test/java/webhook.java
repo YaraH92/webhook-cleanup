@@ -24,7 +24,7 @@ public class webhook {
     public void setUp()  {
 
         grid = new GridClient(accessKey, host);
-        client = grid.lockDeviceForExecution("Quick Start seetest iOS NATIVE Demo", "@serial='", 10, 50000);
+        client = grid.lockDeviceForExecution("Quick Start seetest iOS NATIVE Demo", "@serialnumber='"+uid+"'", 10, 50000);
         client.setReporter("xml", "", "Quick Start seetest iOS Native Demo");
     }
 
