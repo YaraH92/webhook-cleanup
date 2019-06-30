@@ -35,6 +35,7 @@ public class webhook {
         dc.setCapability("deviceQuery", "@serialnumber='"+uid+"'");
       //  dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
         dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
+        dc.setCapability("reportFormat", "xml");
         driver = new IOSDriver<>(new URL("https://mastercloud.experitest.com/wd/hub"), dc);
     }
 
