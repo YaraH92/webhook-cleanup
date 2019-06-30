@@ -63,7 +63,7 @@ public class webhook {
     @After
     public void tearDown() {
         sendResponseToCloud();
-        System.out.println("Report URL: "+ driver.getCapabilities().getCapability("reportUrl"));
+   //     System.out.println("Report URL: "+ driver.getCapabilities().getCapability("reportUrl"));
         driver.quit();
     }
 
