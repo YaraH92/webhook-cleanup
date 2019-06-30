@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-   // compile group: 'io.appium', name: 'java-client', version: '5.0.4'
-    compile group: 'com.experitest', name: 'seetest-client', version: "12.6"
+    compile group: 'io.appium', name: 'java-client', version: '5.0.4'
+  //  compile group: 'com.experitest', name: 'seetest-client', version: "12.6"
 
 }

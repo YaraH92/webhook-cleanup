@@ -81,13 +81,13 @@
         <counts>
           <entry key="gradle" value="38" />
           <entry key="gradlew" value="2" />
-          <entry key="java" value="433" />
+          <entry key="java" value="461" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="38" />
-          <entry key="JAVA" value="433" />
+          <entry key="JAVA" value="461" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/webhook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="705">
+              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -557,7 +557,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561880392021" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561881956125" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ManageApps" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -575,7 +575,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.webhook">
+  <component name="RunManager" selected="JUnit.webhook">
     <configuration name="webhook" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="Webhook_CleanUp_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -599,8 +599,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.webhook" />
         <item itemvalue="JUnit.webhook" />
+        <item itemvalue="Android JUnit.webhook" />
       </list>
     </recent_temporary>
   </component>
@@ -639,9 +639,18 @@
     <history-entry file="webhook - 2019.06.30 at 10h 36m 20s.xml">
       <configuration name="webhook" configurationId="AndroidJUnit" />
     </history-entry>
+    <history-entry file="webhook - 2019.06.30 at 10h 45m 31s.xml">
+      <configuration name="webhook" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="webhook - 2019.06.30 at 10h 50m 22s.xml">
+      <configuration name="webhook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="webhook - 2019.06.30 at 10h 52m 28s.xml">
+      <configuration name="webhook" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
@@ -716,8 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/webhook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="705">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
